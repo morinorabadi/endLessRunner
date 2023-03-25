@@ -1,7 +1,16 @@
 import React from 'react'
+import { Canvas } from '@react-three/fiber'
+import Scene from '../r3f/Scene'
 
-export default function App() {
+function App() {
   return (
-    <div>hello world</div>
+    <Canvas
+      shadows
+      camera={{ position: [0,10,-20] }}
+    >
+      <Scene/>
+    </Canvas>
   )
 }
+
+export default  App
